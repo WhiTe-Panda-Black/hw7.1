@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <form class="filter-form">
+        <section class="category-filter">
+            <h2 class="filter-title">Filter By Categories</h2>
+
+            <ul class="category-filter-list">
+                <li class="category-filter-item">
+                    <input class="category-filter-check visually-hidden" type="checkbox" name="item-category" value="furniture1" id="category-furniture1">
+                    <label class="category-filter-label" for="category-furniture1">
+                        <span class="category-filter-item-category">Furniture</span>
+                        <span class="category-filter-item-count">3</span>
+                    </label>
+                </li>
+                <li class="category-filter-item">
+                    <input class="category-filter-check visually-hidden" type="checkbox" name="item-category" value="sofa" id="category-sofa">
+                    <label class="category-filter-label" for="category-sofa">
+                        <span class="category-filter-item-category">Sofa</span>
+                        <span class="category-filter-item-count">4</span>
+                    </label>
+                </li>
+                <li class="category-filter-item">
+                    <input class="category-filter-check visually-hidden" type="checkbox" name="item-category" value="chair" id="category-chair">
+                    <label class="category-filter-label" for="category-chair">
+                        <span class="category-filter-item-category">Chair</span>
+                        <span class="category-filter-item-count">5</span>
+                    </label>
+                </li>
+                <li class="category-filter-item">
+                    <input class="category-filter-check visually-hidden" type="checkbox" name="item-category" value="table" id="category-table">
+                    <label class="category-filter-label" for="category-table">
+                        <span class="category-filter-item-category">Table</span>
+                        <span class="category-filter-item-count">5</span>
+                    </label>
+                </li>
+                <li class="category-filter-item">
+                    <input class="category-filter-check visually-hidden" type="checkbox" name="item-category" value="bedroom" id="category-bedroom">
+                    <label class="category-filter-label" for="category-bedroom">
+                        <span class="category-filter-item-category">Bedroom</span>
+                        <span class="category-filter-item-count">5</span>
+                    </label>
+                </li>
+                <li class="category-filter-item">
+                    <input class="category-filter-check visually-hidden" type="checkbox" name="item-category" value="furniture2" id="category-furniture2">
+                    <label class="category-filter-label" for="category-furniture2">
+                        <span class="category-filter-item-category">Furniture</span>
+                        <span class="category-filter-item-count">5</span>
+                    </label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="price-filter">
+            <h2 class="filter-title">Filter By Price</h2>
+
+            <div class="range-conlrols">
+                <div class="scale">
+                    <div class="bar" style="width: 70%;"></div>
+                </div>
+                <div class="range-toggla range-toggla-min"></div>
+                <div class="range-toggla range-toggla-max"></div>
+            </div>
+            <div class="price">
+                <button class="button-filter">Filter</button>
+                <div class="price-controls">
+                    <label class="min-price">
+                        <input type="text" value="100" name="min_price">
+                    </label>
+                    <span>-</span>
+                    <label class="max-price">
+                        <input type="text" value="500" name="max_price">
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="color-filter">
+            <h2 class="filter-title">Filter By Color</h2>
+
+            <ul class="color-filter-list">
+                <li class="color-filter-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="red" name="item-color" id="color-red">
+                    <label class="color-filter-label" for="color-red">Red</label>
+                </li>
+                <li class="color-filter-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="black" name="item-color" id="color-black">
+                    <label class="color-filter-label" for="color-black">Black</label>
+                </li>
+                <li class="color-filter-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="yellow" name="item-color" id="color-yellow">
+                    <label class="color-filter-label" for="color-yellow">Yellow</label>
+                </li>
+                <li class="color-filter-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="blue" name="item-color" id="color-blue">
+                    <label class="color-filter-label" for="color-blue">Blue</label>
+                </li>
+                <li class="color-filter-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="pink" name="item-color" id="color-pink">
+                    <label class="color-filter-label" for="color-pink">Pink</label>
+                </li>
+                <li class="color-filter-item">
+                    <input class="color-filter-check visually-hidden" type="checkbox" value="green" name="item-color" id="color-green">
+                    <label class="color-filter-label" for="color-green">Green</label>
+                </li>
+            </ul>
+        </section>
+
+        <section class="size-filter">
+            <h2 class="filter-title">Filter By Size</h2>
+
+            <ul class="size-filter-list">
+                <li class="size-filter-item">
+                    <input type="checkbox" class="size-filter-check visually-hidden" value="small" name="item-size" id="size-s">
+                    <label for="size-s" class="size-filter-label">
+                        <span class="size-filter-item-size">s</span>
+                        <span class="size-filter-item-count">3</span>
+                    </label>
+                </li>
+                <li class="size-filter-item">
+                    <input type="checkbox" class="size-filter-check visually-hidden" value="medium" name="item-size" id="size-m">
+                    <label for="size-m" class="size-filter-label">
+                        <span class="size-filter-item-size">m</span>
+                        <span class="size-filter-item-count">4</span>
+                    </label>
+                </li>
+                <li class="size-filter-item">
+                    <input type="checkbox" class="size-filter-check visually-hidden" value="large" name="item-size" id="size-l">
+                    <label for="size-l" class="size-filter-label">
+                        <span class="size-filter-item-size">l</span>
+                        <span class="size-filter-item-count">5</span>
+                    </label>
+                </li>
+                <li class="size-filter-item">
+                    <input type="checkbox" class="size-filter-check visually-hidden" value="x-large" name="item-size" id="size-xl">
+                    <label for="size-xl" class="size-filter-label">
+                        <span class="size-filter-item-size">xl</span>
+                        <span class="size-filter-item-count">6</span>
+                    </label>
+                </li>
+                <li class="size-filter-item">
+                    <input type="checkbox" class="size-filter-check visually-hidden" value="xx-large" name="item-size" id="size-xx">
+                    <label for="size-xx" class="size-filter-label">
+                        <span class="size-filter-item-size">xx</span>
+                        <span class="size-filter-item-count">6</span>
+                    </label>
+                </li>
+            </ul>
+        </section>
+    </form>
+</body>
+</html>
